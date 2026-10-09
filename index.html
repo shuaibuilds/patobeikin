@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Cocina china casera en Extramurs, Valencia. Carta, horario y reservas por WhatsApp." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Restaurante Pato Beikin · Cocina china en Valencia" />
+    <meta property="og:description" content="Cocina china casera en Extramurs, Valencia. Carta, horario y reservas por WhatsApp." />
+    <meta property="og:image" content="https://patobeikin.vercel.app/og.jpg" />
+    <meta property="og:url" content="https://patobeikin.vercel.app/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://patobeikin.vercel.app/og.jpg" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <title>Restaurante Pato Beikin · Cocina china en Valencia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400&display=swap"
+    />
+    <link rel="stylesheet" href="hark.css" />
+    <link rel="stylesheet" href="hark-hero.css" />
+    <style>
+      .x-lang {
+        flex: none;
+        display: flex;
+        justify-self: end;
+        border-radius: var(--r-pill);
+        background: var(--fill-segment);
+      }
+      .page > .x-lang { background: var(--fill-tertiary); }
+      .x-lang button {
+        flex: none;
+        padding: 8px 12px;
+        border: 0;
+        border-radius: var(--r-pill);
+        background: transparent;
+        font: var(--type-label);
+        color: var(--text-secondary-on);
+        cursor: pointer;
+        white-space: nowrap;
+      }
+      .page > .x-lang button { color: var(--text-secondary); }
+      .x-lang button:hover { color: var(--text-primary-on); }
+      .x-lang button[aria-pressed="true"] { background: var(--fill-primary-on); color: var(--text-primary); }
+      @media (max-width: 599px) {
+        .x-lang button { min-height: var(--tap); min-width: var(--tap); padding-inline: 8px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page" id="top">
+      <header class="nav glass" data-auto></header>
+      <div class="x-lang" role="group" aria-label="Idioma" data-i18n-attr="aria-label:langGroup">
+        <button type="button" lang="es" data-lang="es" aria-pressed="true">ES</button>
+        <button type="button" lang="en" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" lang="zh-Hans" data-lang="zh" aria-pressed="false">中文</button>
+      </div>
+      <main class="main">
+        <section class="hero">
+          <img class="hero__img" src="pato-hero.jpg" alt="Pato pekín asado sobre una mesa de madera" data-i18n-attr="alt:heroAlt" />
+          <div class="hero__copy">
+            <p class="hero__eyebrow" data-i18n="heroEyebrow">Cocina china en Valencia</p>
+            <h1>Pato Beikin</h1>
+            <p class="hero__sub" data-i18n="heroSub">Pato pekín, carta vegana completa y trato familiar, a 3 minutos de la Estación del Norte.</p>
+            <p class="hero__meta" data-i18n="heroMeta">4,5 ★ en Google · más de 740 reseñas</p>
+          </div>
+          <aside class="callout" aria-label="Reservar" data-i18n-attr="aria-label:book">
+            <p class="callout__head"><span data-i18n="bookHead">Reserva tu mesa</span></p>
+            <p class="callout__lead" data-i18n="heroLead"><strong>Ven a probar el pato pekín.</strong> Escríbenos o llámanos al +34 655 52 77 33.</p>
+            <div class="links">
+              <a class="btn" href="https://wa.me/34655527733" target="_blank" rel="noopener" data-i18n="btnWa">Reservar por WhatsApp</a>
+              <a class="btn" href="tel:+34655527733" data-i18n="btnCall">Llamar</a>
+            </div>
+          </aside>
+          <p class="hero__credit" data-i18n="heroCredit">Pato pekín, la especialidad de la casa</p>
+        </section>
+
+        <section class="section" id="por-que" data-nav="Por qué venir" data-i18n-attr="data-nav:navWhy">
+          <div class="head">
+            <h2 data-i18n="whyH">Tres razones para venir.</h2>
+          </div>
+          <div class="cards">
+            <div>
+              <h3 data-i18n="why1H">El pato pekín</h3>
+              <p data-i18n="why1P">La especialidad de la casa, el plato que más mencionan los clientes.</p>
+            </div>
+            <div>
+              <figure class="cards__media"><img src="pato-vegan.jpg" alt="Platos vegetarianos: berenjena, tallarines, tofu kung pao y sopa wan tun" data-i18n-attr="alt:veganAlt" /></figure>
+              <h3 data-i18n="why2H">Carta vegana y vegetariana aparte</h3>
+              <p data-i18n="why2P">Una de las más amplias de Valencia en cocina china.</p>
+            </div>
+            <div>
+              <h3 data-i18n="why3H">Rápido, generoso y barato</h3>
+              <p data-i18n="why3P">Raciones abundantes, unos 10 € por persona, menú diario entre semana.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="platos" data-nav="Platos" data-i18n-attr="data-nav:navDishes">
+          <div class="head">
+            <h2 data-i18n="dishesH">Los platos que más piden.</h2>
+          </div>
+          <div class="cards">
+            <div>
+              <h3 data-i18n="meatH">Pato y carnes</h3>
+              <ul>
+                <li data-i18n="d1">Pato pekín</li>
+                <li data-i18n="d2">Pato a la naranja</li>
+                <li data-i18n="d3">Pollo Kung Pao (Kun Bao) con anacardos</li>
+                <li data-i18n="d4">Ternera con pimiento verde</li>
+                <li data-i18n="d5">Pollo al curry</li>
+              </ul>
+            </div>
+            <div>
+              <h3 data-i18n="noodlesH">Tallarines, verduras y más</h3>
+              <ul>
+                <li data-i18n="d6">Tallarines a la plancha</li>
+                <li data-i18n="d7">Berenjena salteada</li>
+                <li data-i18n="d8">Wan tun</li>
+                <li data-i18n="d9">Tiras de carne estilo Yu Xiang con tallarines</li>
+              </ul>
+            </div>
+          </div>
+          <p class="fineprint" data-i18n="dishesNote">Carta completa en el local. También comida para llevar.</p>
+        </section>
+
+        <section class="section" id="resenas" data-nav="Reseñas" data-i18n-attr="data-nav:navReviews">
+          <div class="head">
+            <h2 data-i18n="reviewsH">Lo que dicen los clientes.</h2>
+          </div>
+          <div class="cards">
+            <div>
+              <p class="quote" lang="en">“Authentic Chinese cuisine and highly recommend that Roast Duck!!”</p>
+              <p class="fineprint" data-i18n="reviewSrc">Reseña en Google</p>
+            </div>
+            <div>
+              <p class="quote" lang="en">“Owners are the best host, quality food, good price.”</p>
+              <p class="fineprint" data-i18n="reviewSrc">Reseña en Google</p>
+            </div>
+            <div>
+              <p class="quote" lang="en">“Very small restaurant but good food and friendly asian service.”</p>
+              <p class="fineprint" data-i18n="reviewSrc">Reseña en Google</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="horario" data-nav="Horario" data-i18n-attr="data-nav:navHours">
+          <div class="head">
+            <h2 data-i18n="hoursH">Abierto todos los días menos el miércoles.</h2>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col" data-i18n="colDay">Día</th>
+                  <th scope="col" data-i18n="colLunch">Comidas</th>
+                  <th scope="col" data-i18n="colDinner">Cenas</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row" data-i18n="mon">Lunes</th><td>12:00–16:30</td><td>19:00–22:30</td></tr>
+                <tr><th scope="row" data-i18n="tue">Martes</th><td>12:00–16:30</td><td>19:00–22:30</td></tr>
+                <tr><th scope="row" data-i18n="wed">Miércoles</th><td class="muted" data-i18n="closed">Cerrado</td><td class="muted" data-i18n="closed">Cerrado</td></tr>
+                <tr><th scope="row" data-i18n="thu">Jueves</th><td>12:00–16:30</td><td>19:00–22:30</td></tr>
+                <tr><th scope="row" data-i18n="fri">Viernes</th><td>12:00–16:30</td><td>19:00–22:30</td></tr>
+                <tr><th scope="row" data-i18n="sat">Sábado</th><td>12:00–16:30</td><td>19:30–23:30</td></tr>
+                <tr><th scope="row" data-i18n="sun">Domingo</th><td>12:00–16:30</td><td>19:00–22:30</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="section" id="donde" data-nav="Dónde" data-i18n-attr="data-nav:navWhere">
+          <div class="head">
+            <h2 data-i18n="whereH">A un paso de la Estación del Norte.</h2>
+          </div>
+          <div class="prose">
+            <p><span data-i18n="addrLabel">Dirección:</span> <strong>Carrer del Matemàtic Marzal, 17, Extramurs, 46007 València.</strong></p>
+            <p data-i18n="addrNear">Cerca de la parada de bus Xàtiva – Institut Lluís Vives y de la Estación del Norte.</p>
+          </div>
+          <div class="links">
+            <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Restaurant%20Pato%20Beikin%2C%20Carrer%20del%20Matem%C3%A0tic%20Marzal%2017%2C%2046007%20Val%C3%A8ncia" target="_blank" rel="noopener" data-i18n="btnMap">Cómo llegar</a>
+          </div>
+        </section>
+
+        <section class="section" id="contacto" data-nav="Contacto" data-i18n-attr="data-nav:navContact">
+          <div class="head">
+            <h2 data-i18n="contactH">Reserva tu mesa.</h2>
+          </div>
+          <aside class="callout" aria-label="Contacto" data-i18n-attr="aria-label:navContact">
+            <p class="callout__head" data-i18n="contactHead">Teléfono y WhatsApp</p>
+            <p class="callout__lead" data-i18n="contactLead"><strong>+34 655 52 77 33</strong> Te guardamos mesa para el pato pekín.</p>
+            <div class="links">
+              <a class="btn" href="https://wa.me/34655527733" target="_blank" rel="noopener" data-i18n="btnWa">Reservar por WhatsApp</a>
+              <a class="btn" href="tel:+34655527733" data-i18n="btnCall">Llamar</a>
+            </div>
+          </aside>
+        </section>
+      </main>
+      <footer class="foot">
+        <p data-i18n="footCopy">© Restaurante Pato Beikin</p>
+        <nav aria-label="Volver a las secciones" data-auto data-i18n-attr="aria-label:footNav"></nav>
+        <a class="badge" href="https://x.com/shuaibuilds" target="_blank" rel="noopener"><span>Web por Shuai</span></a>
+      </footer>
+    </div>
+    <script src="hark.js"></script>
+    <script>
+      (function () {
+        var T = {
+          en: {
+            title: "Pato Beikin Restaurant · Chinese food in Valencia",
+            langGroup: "Language",
+            heroAlt: "Roast Peking duck on a wooden table",
+            heroEyebrow: "Chinese food in Valencia",
+            heroSub: "Peking duck, a full vegan menu and a family welcome, 3 minutes from the North Station (Estación del Norte).",
+            heroMeta: "4.5 ★ on Google · 740+ reviews",
+            book: "Book",
+            bookHead: "Book your table",
+            heroLead: "<strong>Come and try our Peking duck.</strong> Message or call us on +34 655 52 77 33.",
+            btnWa: "Book on WhatsApp",
+            btnCall: "Call",
+            heroCredit: "Peking duck, the house speciality",
+            navWhy: "Why us",
+            whyH: "Three reasons to come.",
+            why1H: "The Peking duck",
+            why1P: "The house speciality, and the dish guests mention most.",
+            veganAlt: "Vegetarian dishes: aubergine, noodles, kung pao tofu and wonton soup",
+            why2H: "A separate vegan and vegetarian menu",
+            why2P: "One of the widest in Valencia for Chinese food.",
+            why3H: "Fast, generous and cheap",
+            why3P: "Big portions, about €10 per person, daily set menu on weekdays.",
+            navDishes: "Dishes",
+            dishesH: "Our most ordered dishes.",
+            meatH: "Duck and meat",
+            d1: "Peking duck (Pato pekín)",
+            d2: "Duck à l'orange (Pato a la naranja)",
+            d3: "Kung Pao (Kun Bao) chicken with cashews (Pollo Kung Pao (Kun Bao) con anacardos)",
+            d4: "Beef with green pepper (Ternera con pimiento verde)",
+            d5: "Chicken curry (Pollo al curry)",
+            noodlesH: "Noodles, vegetables and more",
+            d6: "Griddled noodles (Tallarines a la plancha)",
+            d7: "Stir-fried aubergine (Berenjena salteada)",
+            d8: "Wonton (Wan tun)",
+            d9: "Yu Xiang shredded meat with noodles (Tiras de carne estilo Yu Xiang con tallarines)",
+            dishesNote: "Full menu at the restaurant. Takeaway available too.",
+            navReviews: "Reviews",
+            reviewsH: "What our guests say.",
+            reviewSrc: "Google review",
+            navHours: "Hours",
+            hoursH: "Open every day except Wednesday.",
+            colDay: "Day", colLunch: "Lunch", colDinner: "Dinner",
+            mon: "Monday", tue: "Tuesday", wed: "Wednesday", thu: "Thursday", fri: "Friday", sat: "Saturday", sun: "Sunday",
+            closed: "Closed",
+            navWhere: "Location",
+            whereH: "A step from the North Station.",
+            addrLabel: "Address:",
+            addrNear: "Near the Xàtiva – Institut Lluís Vives bus stop and the North Station (Estación del Norte).",
+            btnMap: "Get directions",
+            navContact: "Contact",
+            contactH: "Book your table.",
+            contactHead: "Phone and WhatsApp",
+            contactLead: "<strong>+34 655 52 77 33</strong> We'll save you a table for the Peking duck.",
+            footCopy: "© Pato Beikin Restaurant",
+            footNav: "Back to sections",
+            top: "Top"
+          },
+          zh: {
+            title: "Pato Beikin 餐厅 · 瓦伦西亚中餐",
+            langGroup: "语言",
+            heroAlt: "木桌上的北京烤鸭",
+            heroEyebrow: "瓦伦西亚的中餐馆",
+            heroSub: "北京烤鸭、完整的素食菜单和家庭式的热情招待，距北站 (Estación del Norte) 步行 3 分钟。",
+            heroMeta: "Google 评分 4.5 ★ · 740 多条评价",
+            book: "订座",
+            bookHead: "预订餐位",
+            heroLead: "<strong>快来尝尝我们的北京烤鸭。</strong>欢迎发消息或致电 +34 655 52 77 33。",
+            btnWa: "WhatsApp 订座",
+            btnCall: "打电话",
+            heroCredit: "北京烤鸭，本店招牌菜",
+            navWhy: "推荐理由",
+            whyH: "三个来这里的理由。",
+            why1H: "北京烤鸭",
+            why1P: "本店招牌，也是顾客提到最多的菜。",
+            veganAlt: "素食菜品：茄子、面条、宫保豆腐和馄饨汤",
+            why2H: "独立的纯素和素食菜单",
+            why2P: "瓦伦西亚中餐馆里选择最丰富的之一。",
+            why3H: "上菜快、分量足、价格实惠",
+            why3P: "分量十足，人均约 10 €，工作日供应每日套餐。",
+            navDishes: "菜品",
+            dishesH: "最受欢迎的菜品。",
+            meatH: "鸭肉和肉类",
+            d1: "北京烤鸭 (Pato pekín)",
+            d2: "橙汁鸭 (Pato a la naranja)",
+            d3: "腰果宫保鸡丁 (Pollo Kung Pao (Kun Bao) con anacardos)",
+            d4: "青椒牛肉 (Ternera con pimiento verde)",
+            d5: "咖喱鸡 (Pollo al curry)",
+            noodlesH: "面条、蔬菜及其他",
+            d6: "铁板炒面 (Tallarines a la plancha)",
+            d7: "炒茄子 (Berenjena salteada)",
+            d8: "馄饨 (Wan tun)",
+            d9: "鱼香肉丝面 (Tiras de carne estilo Yu Xiang con tallarines)",
+            dishesNote: "完整菜单请到店查看。也提供外卖。",
+            navReviews: "评价",
+            reviewsH: "顾客怎么说。",
+            reviewSrc: "Google 评价",
+            navHours: "营业时间",
+            hoursH: "除周三外每天营业。",
+            colDay: "日期", colLunch: "午餐", colDinner: "晚餐",
+            mon: "周一", tue: "周二", wed: "周三", thu: "周四", fri: "周五", sat: "周六", sun: "周日",
+            closed: "休息",
+            navWhere: "位置",
+            whereH: "北站 (Estación del Norte) 旁边。",
+            addrLabel: "地址：",
+            addrNear: "靠近 Xàtiva – Institut Lluís Vives 公交站和北站 (Estación del Norte)。",
+            btnMap: "导航前往",
+            navContact: "联系",
+            contactH: "预订餐位。",
+            contactHead: "电话和 WhatsApp",
+            contactLead: "<strong>+34 655 52 77 33</strong> 我们为您留座，等您来吃北京烤鸭。",
+            footCopy: "© Pato Beikin 餐厅",
+            footNav: "返回各部分",
+            top: "顶部"
+          }
+        };
+        var HTML_LANG = { es: "es", en: "en", zh: "zh-Hans" };
+        var doc = document, es = { title: doc.title, top: "Inicio" };
+        function all(sel, root) { return [].slice.call((root || doc).querySelectorAll(sel)); }
+
+        function start() {
+          // Remember the Spanish originals.
+          all("[data-i18n]").forEach(function (el) {
+            var k = el.getAttribute("data-i18n");
+            if (!(k in es)) es[k] = el.innerHTML;
+          });
+          all("[data-i18n-attr]").forEach(function (el) {
+            el.getAttribute("data-i18n-attr").split(";").forEach(function (pair) {
+              var p = pair.split(":");
+              if (!(p[1] in es)) es[p[1]] = el.getAttribute(p[0]);
+            });
+          });
+
+          // Put the switcher into the sticky nav, before the theme button.
+          var sw = doc.querySelector(".x-lang"), header = doc.querySelector("header.nav");
+          if (sw && header) header.insertBefore(sw, header.querySelector(".theme-btn"));
+
+          all(".x-lang button").forEach(function (b) {
+            b.addEventListener("click", function () { setLang(b.getAttribute("data-lang")); });
+          });
+          setLang("es");
+        }
+
+        function setLang(lang) {
+          var d = lang === "es" ? es : T[lang];
+          function t(k) { return d[k] != null ? d[k] : es[k]; }
+          doc.documentElement.lang = HTML_LANG[lang];
+          doc.title = t("title");
+          all("[data-i18n]").forEach(function (el) { el.innerHTML = t(el.getAttribute("data-i18n")); });
+          all("[data-i18n-attr]").forEach(function (el) {
+            el.getAttribute("data-i18n-attr").split(";").forEach(function (pair) {
+              var p = pair.split(":");
+              el.setAttribute(p[0], t(p[1]));
+            });
+          });
+          // Nav and footer links built by hark.js from data-nav.
+          all("section[data-nav]").forEach(function (s) {
+            all('header.nav .seg a[href="#' + s.id + '"], .foot nav a[href="#' + s.id + '"]').forEach(function (a) {
+              a.textContent = s.getAttribute("data-nav");
+            });
+          });
+          all('.foot nav a[href="#top"]').forEach(function (a) { a.textContent = t("top"); });
+          // Phone table labels follow the column headers.
+          all(".table-wrap table").forEach(function (tbl) {
+            var names = all("thead th", tbl).map(function (th) { return th.textContent.trim(); });
+            all("tbody tr", tbl).forEach(function (tr) {
+              [].slice.call(tr.children).forEach(function (c, i) {
+                if (c.tagName === "TD" && names[i]) c.setAttribute("data-label", names[i]);
+              });
+            });
+          });
+          all(".x-lang button").forEach(function (b) {
+            b.setAttribute("aria-pressed", b.getAttribute("data-lang") === lang ? "true" : "false");
+          });
+        }
+
+        if (doc.readyState === "loading") doc.addEventListener("DOMContentLoaded", start);
+        else start();
+      })();
+    </script>
+  </body>
+</html>
